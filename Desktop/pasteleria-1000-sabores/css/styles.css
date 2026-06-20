@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Pacifico&display=swap');
+
+:root {
+    --bg-principal: #FFF5E1;       /* Crema Pastel */
+    --acento-rosa: #FFC0CB;        /* Rosa Suave */
+    --acento-chocolate: #8B4513;   /* Chocolate */
+    --texto-principal: #5D4037;    /* Marrón Oscuro */
+    --texto-secundario: #B0BEC5;   /* Gris Claro */
+    --blanco: #FFFFFF;
+    --alerta-rojo: #D32F2F;
+    --verde-exito: #2E7D32;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blanco);
+    padding: 15px 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.brand-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    color: var(--acento-chocolate);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--texto-principal);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--acento-chocolate);
+    border-bottom: 2px solid var(--acento-rosa);
+}
+
+/* Contenedores */
+.container {
+    flex: 1;
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Tarjetas y Formularios */
+.box-form {
+    background: var(--blanco);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+h2, h3 {
+    font-family: 'Pacifico', cursive;
+    color: var(--acento-chocolate);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--texto-secundario);
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--acento-chocolate);
+    color: var(--blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #6F360E;
+}
+
+/* Errores */
+.error-message {
+    color: var(--alerta-rojo);
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: none;
+}
+
+.input-error {
+    border: 2px solid var(--alerta-rojo) !important;
+}
+
+/* Grid Productos */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card-producto {
+    background: var(--blanco);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Admin Layout */
+.admin-layout {
+    display: flex;
+    min-height: 80vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: var(--acento-chocolate);
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: var(--blanco);
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.sidebar a:hover {
+    background: #6F360E;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 20px;
+    background: var(--blanco);
+}
+
+footer {
+    background: var(--blanco);
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    border-top: 1px solid var(--texto-secundario);
+}
+
+@media (max-width: 768px) {
+    .navbar { flex-direction: column; gap: 15px; }
+    .nav-links { flex-direction: column; align-items: center; }
+    .admin-layout { flex-direction: column; }
+    .sidebar { width: 100%; }
+}

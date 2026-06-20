@@ -1,0 +1,62 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería 1000 Sabores</title>
+    <!-- Enlace a tus estilos globales -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="background-color: #fcf8f5; margin: 0; font-family: sans-serif;">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar" style="background-color: #5d4037; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <a href="index.html" class="brand-title" style="color: white; text-decoration: none; font-size: 1.6rem; font-weight: bold;">Pastelería 1000 Sabores 🍰</a>
+        <ul class="nav-links" style="display: flex; list-style: none; gap: 20px; margin: 0; padding: 0;">
+            <li><a href="index.html" style="color: white; text-decoration: none; font-weight: bold; border-bottom: 2px solid white; padding-bottom: 5px;">Home</a></li>
+            <li><a href="productos.html" style="color: white; text-decoration: none;">Productos</a></li>
+            <li><a href="registro.html" style="color: white; text-decoration: none;">Registro</a></li>
+            <li><a href="login.html" style="color: white; text-decoration: none;">Login</a></li>
+            <li><a href="contacto.html" style="color: white; text-decoration: none;">Contacto</a></li>
+            <li><a href="admin-dashboard.html" style="color: #ff8a80; text-decoration: none; font-weight: bold;">Admin</a></li>
+        </ul>
+        <div style="color: white; font-weight: bold;">🛒 Carrito (0)</div>
+    </nav>
+
+    <!-- SECCIÓN DE INICIO CON TRES COLUMNAS (IMAGEN - TEXTO - IMAGEN) -->
+    <main style="padding: 5rem 2rem; max-width: 1200px; margin: 0 auto;">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+            
+            <!-- Imagen Pastelería Izquierda -->
+            <div style="flex: 1; min-width: 280px; text-align: left;">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500" alt="Pastel de Chocolate" style="width: 100%; max-width: 320px; height: 380px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
+            </div>
+
+            <!-- Caja de Texto Central Estilizada -->
+            <div style="flex: 1.5; min-width: 320px; background: white; padding: 45px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); text-align: center; border-top: 4px solid #5d4037;">
+                <h2 style="color: #5d4037; font-size: 2.4rem; margin-top: 0; margin-bottom: 15px; font-weight: bold;">50 Años de Dulzura Tradicional</h2>
+                <p style="color: #795548; font-size: 1.15rem; margin-bottom: 30px; line-height: 1.6;">
+                    Creadores de la torta más grande del mundo en el Récord Guinness de 1995.
+                </p>
+                <a href="productos.html" style="background-color: #5d4037; color: white; padding: 14px 32px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block; box-shadow: 0 4px 10px rgba(93,64,55,0.3); transition: all 0.3s ease;">
+                    Explorar Catálogo
+                </a>
+            </div>
+
+            <!-- Imagen Pastelería Derecha -->
+            <div style="flex: 1; min-width: 280px; text-align: right;">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500" alt="Pastel con Frambuesas" style="width: 100%; max-width: 320px; height: 380px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
+            </div>
+
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer style="background-color: #5d4037; color: white; text-align: center; padding: 25px; margin-top: 5rem; font-size: 0.95rem;">
+        <p>&copy; 2026 Pastelería 1000 Sabores. Celebrando la repostería chilena.</p>
+    </footer>
+
+    <!-- Tus scripts de funcionalidad -->
+    <script src="js/productos.js"></script>
+</body>
+</html>

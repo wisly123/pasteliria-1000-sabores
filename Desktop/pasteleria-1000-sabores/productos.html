@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - 1000 Sabores</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="brand-title">Pastelería 1000 Sabores 🎂</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html" class="active">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div>🛒 Carrito (<span id="cart-badge">0</span>)</div>
+    </nav>
+
+    <main class="container">
+        <h2>Nuestro Catálogo de Productos</h2>
+        <div id="contenedor-productos" class="grid-productos"></div>
+
+        <hr style="margin: 40px 0; border: 0; border-top: 1px solid var(--texto-secundario);">
+
+        <h2>Tu Carrito de Compras</h2>
+        <div id="carrito-detalle" style="background: white; padding: 20px; border-radius: 8px;"></div>
+    </main>
+
+    <footer><p>&copy; 2026 Pastelería 1000 Sabores</p></footer>
+    <script src="js/productos.js"></script>
+</body>
+</html>
